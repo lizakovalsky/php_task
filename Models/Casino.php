@@ -6,10 +6,20 @@ class Casino
 
     public function __construct()
     {
-        $this->money = 0;
     }
 
     public function __destruct()
     {
+    }
+
+    public function setMoney($setMoney)
+    {
+        $this->money = $setMoney;
+    }
+
+    public function randomize($value, $start, $end)
+    {
+        $value = rand($start, $end);
+        return $value;
     }
 }

@@ -5,11 +5,14 @@ class Player
     public $number;
     public $rate;
     // format
+
     public function __construct()
     {
-        $this->money = 0;
-        $this->number = 1;
-        $this->rate = 100;
+    }
+    //сет мони
+    public function setMoney($setMoney)
+    {
+        $this->money = $setMoney;
     }
 
     public function __destruct()
